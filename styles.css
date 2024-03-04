@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #54a;
+    width: 100vw;
+}
+.container {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.module {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+.module > button {
+    justify-self: center;
+}
+.game {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+.game > div {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.container > h2 {
+    font-size: 70px;
+}
+button, input {
+    padding: 10px;
+    font-size: large;
+}
+.scores {
+    width: 60%;
+    background-color: salmon;
+    color: #54a;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
